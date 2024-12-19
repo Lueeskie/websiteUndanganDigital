@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #FFF2D7;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    position: relative;
+    background-image: url('../img/backgroundimg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: larger;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes puff-in-center{
+    0%{
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center{
+    0%{
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  #ornamen2{
+    width: 30vw;
+    position: relative;
+    left: 73%;
+    top: 23%;
+  }
+  #ornamen3{
+    width: 30vw;
+    position: relative;
+    right: 30%;
+    bottom: 18%;
+  }
+.content-box{
+    padding: 20px 40px;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    right: 30vw;
+}
+.content-box button{
+    width: 40%;
+    height: auto;
+    background-color: gold;
+    color: #4A4947;
+    font-size: large;
+}
+.w1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.w2{
+    font-family: Great Vibes;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.w3{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.w4{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.countdown{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.countdown span{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+}
+#scrollButton:hover{
+    background-color: yellow;
+}
+.navbar{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: sticky;
+    top: 15px;
+    z-index: 2;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+.navbar{
+    transition: background-color 2s ease-out;
+}
+.navbar p{
+    padding: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+.navbar p:hover{
+    background-color: lightslategray;
+}
+.n1{
+    display: inline-block;
+}
+.n2{
+    display: inline-block;
+}
+.n3{
+    display: inline-block;
+}
+.n4{
+    display: inline-block;
+}
+.quotes-background{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    border-radius: 8%;
+}
+.sambutan{
+    font-family: Playpen Sans;
+}
+.sambutan1{
+    background-color: #f9f9f9;
+    color: black;
+}
+.quote{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.quotes-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+.quotes-link:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#profile-section{
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#profile-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile-photo1{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile-photo2{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    position: relative;
+    right: 10px;
+}
+.profile-info{
+    text-align: left;
+}
+.profile-info h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.profile-info p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #666;
+}
+.profile-info a{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+.profile-info a:hover{
+    text-decoration: underline;
+}
+#quotes-section{
+    margin-bottom: 60px; 
+    padding: 20px;
+}
+#profile-section{
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 60px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#profile-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.profile{
+    margin-bottom: 30px;
+}
+#profile-section{
+    margin-bottom: 80px; 
+}
+.textbesar{
+    font-family: Playpen Sans;
+}
+.seksiprofile{
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.seksiprofile p{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.social-media a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-size: 36px;
+    transition: color 0.3s ease;
+}
+.social-media a:hover{
+    color: #ff4081;
+}
+.fotbar{
+    background-color: gray ;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.batang{
+    background-color: whitesmoke;
+    width: 50%;
+    position: relative;
+    left: 24%;
+    text-align: center;
+}
+.fotbar1{
+    font-family: Playpen Sans;
+    position: relative;
+}
+.fotbar2{
+    margin-top: 20px;
+    width: 50vw;
+    height: 70%;
+}
+.lokasiacara{
+    background-color:  gray;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    font-family: Playpen Sans;
+    border-radius: 10%;
+}
+.lokasiacara h1{
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+}
+.lokasiakad{
+    background-color: white;
+    margin-left: 15%;
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    margin-top: 2%;
+    border-radius: 10%;
+}
+.imglokasi1{
+    width: 50%;
+    height: 60%;
+    display: inline-block;
+    border-radius: 60%;
+    border: 2px gray double;
+}
+.lokasiresepsi{
+    background-color: white;
+    margin-left: 15%;
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    margin-top: 2%;
+    border-radius: 10%;
+}
+.imglokasi2{
+    width: 50%;
+    height: 60%;
+    display: inline-block;
+    border-radius: 60%;
+    border: 2px gray double;
+}
+.lokasiakad, .lokasiresepsi{
+    position: relative;
+    right: 8%;
+}
+.map-container{
+    margin: 20px 0;
+    text-align: center;
+    border: #1a1a1a;
+}
+.map-container iframe{
+    width: 80%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+.gallery1{
+    background-color: silver;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    font-family: Playpen Sans;
+}
+.gallery1 img{
+    display: inline-block;
+    width: 32%;
+    padding: 10px;
+    border-radius: 10%;
+}
+.gallery1 h1{
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+}
+.video-section h1{
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+}
+.tamu-khusus-section{
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 80%;
+    position: relative;
+    left: 8%;
+}
+.tamu-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+.tamu-table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+.tamu-table thead{
+    background-color: #e91e63;
+    color: white;
+}
+.tamu-table th, .tamu-table td{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+.tamu-table tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.tamu-table th{
+    text-align: center;
+}
+.tamu-table td{
+    text-align: center;
+}
+.tamu-table tbody tr:hover{
+    background-color: #f1c4d2;
+}
+@media screen and (max-width: 768px){
+    .tamu-table {
+        font-size: 16px;
+    }
+}
+.containerrsvp{
+    background-color: silver;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    font-family: Playpen Sans;
+}
+.containerrsvp h1{
+    background-color: white;
+    width: 40%;
+    margin-left: 30%; 
+}
+.rsvp-container{
+    background-color: white;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.rsvp-container h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.rsvp-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"]{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.form-group input[type="radio"]{
+    margin-right: 5px;
+}
+.submit-button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-btn:hover{
+    background-color: #0056b3;
+}
+.kirim-hadiah{
+    background-color: silver;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5%;
+}
+.transfer-section, .kado-section{
+    margin-bottom: 20px;
+}
+.transfer-section{
+    border-radius: 10%;
+    padding: 20px;
+    margin-left: 25%;
+    background-color: gray;
+    width: 50%;
+}
+.img2{
+    width: 25%;
+}
+.gift-image{
+    width: 10vw;
+    height: auto;
+    margin: 10px 0;
+}
+.copy-btn{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pesan-pengantin{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.submit-btn{
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40vw;
+}
+#pesanList{
+    margin-top: 20px;
+    text-align: left;
+}
+.pesan-item{
+    background-color: white;
+    color: #001f3f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.pesan-terkirim{
+    text-align: center;
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#tombolmusik{
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    border-radius: 150%;
+    padding: 30px;
+    width: 5%;
+}
+#tombolmusik img{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width: 90%;
+    height: 60%;
+}
+.thankyou-container{
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFF2D7;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.thankyou-text{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 50px; 
+    color: #001f3f; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 10px;
+}
+.thankyou-subtext{
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.thankyou-text{
+    animation: fadeIn 2s ease-in-out, bounce 3s infinite;
+}
+@keyframes fadeIn{
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+@media (max-width: 240px) {
+    .background{
+        width: 100%;
+        height: 100vh;
+    }
+    .content-box{
+        width: 85%;
+        height: 100%;
+    }
+}
